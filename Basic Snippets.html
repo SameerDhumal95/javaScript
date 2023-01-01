@@ -1,0 +1,757 @@
+<!-- <script>
+//1
+  let a = [];
+  let b = [];
+  console.warn(a == b);
+  console.warn(a === b);
+</script> -->
+
+<!-- <script>
+//2
+  let a = [];
+  let b = a;
+  console.warn(a == b);
+  console.warn(a === b);
+</script> -->
+
+<!-- <script>
+  //3
+  let a = [20];
+  let b = [20];
+
+  console.warn(a[0] == b[0]);
+  console.warn(a[0] === b[0]);
+</script> -->
+
+<!-- <script>
+  //4
+  let c = 12;
+  let d = "12";
+
+  console.warn(c == d); //operand is convert into number and then compare
+  console.warn(c === d); //compare data type and value
+</script> -->
+
+<!-- <script>
+  //5
+  let z = [1, 2, 3, 4];
+  console.warn(...z);
+</script> -->
+
+<!-- <script>
+  //6
+  let z = [1, 2, 3, 4];
+  console.warn(...z);
+</script> -->
+
+<!-- <script>
+  //7
+  const set = new Set([1, 2, 3, 3, 4, 5]);
+  console.warn(set);
+</script> -->
+
+<!-- <script>
+  //8
+  let z = [1, 2, 3, 4];
+  console.warn(...z);
+</script> -->
+
+<!-- <script>
+  //9
+  let data = { name: "Sameer" };
+  console.warn(delete data.name);
+</script> -->
+
+<!-- <script>
+  //10
+  let data = { name: "Sameer" };
+  console.warn(delete data);
+</script> -->
+
+<!-- <script>
+    //11
+    let  = { name: "Sameer" };
+    console.warn(delete data);
+  </script> -->
+
+<!-- <script>
+  //12
+  let d = ["sam", "ram", "shyam"];
+  let [e] = d;
+  console.warn(e);
+</script> -->
+
+<!-- <script>
+    //13
+    let d = ["sam", "ram", "shyam"];
+    let [e] = d;
+    console.warn(e);
+  </script> -->
+
+<!-- <script>
+  //14
+  let d = ["sam", "ram", "shyam"];
+  let [e, f] = d;
+  console.warn(e, f);
+</script> -->
+
+<!-- <script>
+  //15 without . operator get properties
+  const e = { name: "Sameer", age: 27, gender: "m" };
+  //console.warn(e.age);
+  const { name } = e;
+  console.warn(name);
+</script> -->
+
+<!-- <script>
+  //16  merging two objects
+  let data = { name: "Sameer", age: 27, gender: "m" };
+  let info = { city: "pen", hobbie: "piano" };
+  dat = { ...data, ...info };
+  console.warn(dat);
+</script> -->
+
+<!-- <script>
+  //17  
+  let data = { name: "Sameer", age: 27, gender: "m" };
+  let info = { city: "pen", hobbie: "piano" };
+  dat = { data, ...info };
+  console.warn(dat);
+</script> -->
+
+<!-- <script>
+  //18  
+  let data = { name: "Sameer", age: 27, skill: "js" };
+  let info = { city: "pen", skill: "Node" };
+  dat = { ...data, ...info };
+  console.warn(dat);
+</script> -->
+
+<!-- <script>
+  //19  return positive 
+  const result = false || {} || null;
+  console.warn(result);
+</script> -->
+
+<!-- <script>
+  //20  return last value if no positive
+  const result = false || "" || null;
+  console.warn(result);
+</script> -->
+
+<!-- <script>
+  //21  
+  const result = 0 || [] || true;
+  console.warn(result);
+</script> -->
+
+<!-- <script>
+  //22
+
+  console.warn(Promise.resolve(5));
+</script> -->
+
+<!-- <script>
+  //23
+  console.warn("❤️" === "❤️");
+</script> -->
+
+<!-- <script>
+  //24 function
+  let name = "sidhu";
+
+  function getName() {
+    console.log(name);
+    let name = "Sam";
+  }
+  getName();
+</script> -->
+
+<!-- <script>
+  //25 let have block level scope
+  let name = "sidhu";
+
+  function getName() {
+    console.log(name);
+  }
+  getName();
+</script> -->
+
+<!-- <script>
+  //26 template literal:Template literals are enclosed by backtick ( ` ) characters instead of double or single quotes.
+
+  console.log(`${((x) => x)("I Love")} to program`);
+</script> -->
+
+<!-- <script>
+    //27
+  function sum(x, y, z) {
+    return x + y + z;
+  }
+  console.log(sum(...[1, 2, 3]));//destructing
+</script> -->
+
+<!-- <script>
+  //28
+  const name = "code step by step";
+  console.log(!typeof name === "object"); //! will false
+  console.log(!typeof name === "string");
+  console.log(typeof name);
+</script> -->
+
+<!-- <script>
+  //29
+  const name = "Sam";
+  const age = 21;
+  console.log(isNaN(name));
+  console.log(isNaN(age));
+</script> -->
+
+<!-- <script>
+  //30
+  let person = { name: "Sam" };
+  Object.seal(person); //we cannot add extra properties when seal but we can modify
+  person.name = "Ram";
+  console.log(person);
+</script> -->
+
+<!-- <script>
+  //31  remove first element
+  let data = [2, 9, 4, 5, 6];
+  data.shift();
+  console.log(data);
+</script> -->
+
+<!-- <script>
+  //32  remove last element
+  let data = [2, 9, 4, 5, 6];
+  data.pop();
+  console.log(data);
+</script> -->
+
+<!-- <script>
+  //33  even odd element
+  let data = 30;
+  console.log(data % 2 == 0 ? true : false);
+</script> -->
+
+<!-- <script>
+  //34  even odd element
+  let data = 30;
+  console.log(data % 2 == 0 ? true : false);
+</script> -->
+
+<!-- <script>
+  //35 convert into boolean
+  let data = "true";
+  console.log(typeof !data);
+</script> -->
+
+<!-- <script>
+  //36
+  let data = "true";
+  console.log(!!data);
+</script> -->
+
+<!-- <script>
+  //37
+  let data = ["anil", "Ramu", "sam"];
+  delete data[1];
+  console.log(data);
+</script> -->
+
+<!-- <script>
+  //38 square
+  let c = 3 ** 3;
+  console.warn(c);
+</script> -->
+
+<!-- <script>
+  //***39 jab bhi setTimeout jaise function like api use hote he tab wo pahele execute karega them value dalega
+  let a = 2;
+  setTimeout(() => {
+    console.warn(a);
+  }, 0);
+  a = 100;
+</script> -->
+
+<!-- <script>
+  //40
+  let a = 2;
+  let A = 30;
+  console.warn(A);
+</script> -->
+
+<!-- <script>
+  //41
+
+  let A10 = 30;
+  //let 10A = 12;
+  console.warn(A10);
+</script> -->
+
+<!-- <script>
+  //42
+  let a = "like";
+  let b = `like`;
+  console.warn(a == b);
+</script> -->
+
+<!-- <script>
+  //43
+  let a = 1;
+  let c = 2;
+  console.warn(--c === a);
+</script> -->
+
+<!-- <script>
+  //44 comparision
+  let a = 1;
+  let b = 1;
+  let c = 2;
+  console.warn((a === b) === --c);
+</script> -->
+
+<!-- <script>
+  //45
+
+  console.warn(3 * 3);
+  console.warn(3 ** 3);
+  //console.warn(3 *** 3);
+</script> -->
+
+<!-- <script>
+  //46
+
+  console.warn(a);
+  var a;
+</script> -->
+
+<!-- <script>
+    //47
+    console.warn(a); 
+  </script> -->
+
+<!-- <script>
+  //48
+
+  console.warn([[[[]]]]);
+</script> -->
+
+<!-- <script>
+  //49
+  //how to find OS name
+  console.log(navigator.platform);
+</script> -->
+
+<!-- <script>
+  //50
+  //let for =20;
+</script> -->
+
+<!-- <script>
+  //51
+  function fruit() {
+    console.log(name);
+    console.log(price);
+
+    var name = "apple";
+    let price = 20;
+  }
+
+  fruit();
+</script> -->
+
+//imp
+<!-- <script>
+  //52
+  for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 2000);
+  }
+</script> -->
+
+<!-- <script>
+  //53
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 2000);
+  }
+</script> -->
+
+<!-- <script>
+  //54
+  console.warn(+true); //+ sign befor any that will convert into num
+  console.warn(typeof +true);
+</script> -->
+
+<!-- <script>
+  //55
+  console.warn(!"ani"); //+ sign befor any that will convert into num
+  console.warn(typeof "true");
+</script> -->
+
+<!-- <script>
+  //56
+  let data = "size";
+  const bird = { size: "small" };
+  console.warn(bird[data]); //+ sign befor any that will convert into num
+  console.warn(bird["size"]);
+  console.warn(bird.size);
+  console.warn(bird.data);
+</script> -->
+
+<!-- <script>
+  //57
+  let c = { name: "sameer" };
+  let d;
+
+  d = c;
+  c.name = "Ramesh";
+  console.log(d.name);
+</script> -->
+
+<!-- <script>
+  //58
+  var x;
+  var x = 12;
+  
+  console.log(x);
+</script> -->
+
+<!-- <script>
+  //59
+  var x;
+  let x = 10;
+  console.log(x);
+</script> -->
+
+<!-- <script>
+  //60
+  let a = 3;
+  let b = new Number(3);
+
+  console.log(a == b);
+  console.log(a === b);
+</script> -->
+
+<!-- <script>
+  //61
+  let name;
+  nme = {};
+  console.log(name);
+  console.log(nme);
+</script> -->
+
+<!-- <script>
+  //62
+  function sum(a, b) {
+    return a + b;
+  }
+  console.log(sum(1, "2"));
+</script> -->
+
+<!-- <script>
+  //63
+  let number = 0;
+
+  console.log(number++);
+  console.log(++number);
+  console.log(number);
+</script> -->
+
+<!-- <script>
+  //64 spread operator
+  function getAge(...args) {
+    console.log(typeof args);
+    console.log(args);
+  }
+  getAge(21, 22);
+</script> -->
+
+<!-- <script>
+  //65 
+  "use strict";
+  age = 25;
+  console.log(age);
+</script> -->
+
+<!-- <script>
+  //66 expression
+  const sum = eval("10*5+10");
+  console.log(sum);
+</script> -->
+
+<!-- <script>
+  //67
+  const obj = { 1: "a", 2: "b", 3: "c" };
+
+  console.log(obj.hasOwnProperty("1"));
+  console.log(obj.hasOwnProperty(1));
+</script> -->
+
+<!-- <script>
+  //68
+  for (let i = 1; i < 5; i++) {
+    if (i === 3) continue;
+    console.log(i);
+  }
+</script> -->
+
+<!-- <script>
+  //69
+  const foo = () => console.log("First");
+  const bar = () => setTimeout(() => console.log("Second"));
+  const buz = () => console.log("Third");
+
+  bar();
+  foo();
+  buz();
+</script> -->
+
+<!-- <div>
+  
+  <div onclick="console.log('First div')">
+    <div onclick="console.log('Second div')">
+      <button onclick="console.log('button')">Click!</button>
+    </div>
+  </div>
+</div> -->
+
+<!-- <script>  //important
+  //71
+  const person = { name: "sameer" };
+
+  function sayHi(age) {
+    return `${this.name} is ${age}`;
+  }
+
+  console.log(sayHi.call(person, 21));
+  console.log(sayHi.bind(person, 21)()); //manually call otherwise it return fuction
+</script> -->
+
+<!-- <script>
+  //72
+  function sayHi() {
+    return (() => 0)();
+  }
+  console.log(typeof sayHi());//number
+</script> -->
+
+<!-- <script>
+  //73
+  function sayHi() {
+    return () => 0;
+  }
+  console.log(typeof sayHi());//function
+</script> -->
+
+<!-- <script>
+  //74
+  function sayHi() {
+    return () => 0;
+  }
+  console.log(typeof sayHi()()); //number
+</script> -->
+
+<!-- <script>
+  //75
+
+  console.log(typeof typeof 1); //number
+</script> -->
+
+<!-- <script>
+  //76
+  const number = [1, 2, 3];
+  number[6] = 11;
+  console.log(number);
+</script> -->
+
+<!-- <script>
+  //77
+  const number = [1, 2, 3];
+  number[9] = number;
+  console.log(number);
+</script> -->
+
+<!-- <script>
+    //78
+    //everything in javascript is either a primary number or object
+  </script> -->
+
+<!-- <script>   // tricky
+    //79
+  console.log(!!null);
+  console.log(!!"");
+  console.log(!!1);
+</script> -->
+
+<!-- <script>  //it generate unique ids
+    //80
+  console.log(setInterval(() => console.log("hi"), 1000));
+  console.log(setInterval(() => console.log("hi"), 1000));
+  console.log(setInterval(() => console.log("hi"), 1000));
+</script> -->
+
+<!-- <script>
+  //81 break into array
+  console.log([..."sam"]);
+</script> -->
+
+<!-- <script>
+  //82
+  const firstPromise = new Promise((resolve, reject) => {
+    setTimeout(resolve, 500, "one");
+  });
+  const secondPromise = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, "two");
+  });
+
+  Promise.race([firstPromise, secondPromise]).then((res) => console.log(res));
+</script> -->
+
+<!-- <script>
+  //83
+  let person = { name: "sam" };
+  const member = [person];
+  person = null;
+  console.log(member);
+</script> -->
+
+<!-- <script>
+  //84 for in loop
+  const person = {
+    name: "superman",
+    age: 21,
+  };
+
+  for (const item in person) {
+    console.log(item);
+  }
+</script> -->
+
+<!-- <script>
+  //85
+  let data = 3 + 4 + "5";
+  console.log(data);
+</script> -->
+
+<!-- <script>
+  //86
+
+  console.log(typeof 3 + 4 + "5");
+</script> -->
+
+<!-- <script>
+  //87
+
+  console.log(typeof (3 + 4 + "5"));
+</script> -->
+
+<!-- <script>
+  //88
+
+  console.log(typeof (3 + 4 + +"5"));//+ will create string to number
+</script> -->
+
+<!-- <script>
+  //89
+
+  console.log([] == []);
+</script> -->
+
+<!-- <script>
+  //90
+  let data = [1, 2, 3].map((num) => {
+    if (typeof num === "number") return;
+    return num * 2;
+  });
+  console.log(data);
+</script> -->
+
+<!-- <script>
+  //91
+  function getInfo(member) {
+    member.name = "Sam";
+  }
+
+  const person = { name: "Sameer" }; //object
+  //when we pass object as parameter then it work as call by ref
+  getInfo(person);
+  console.log(person);
+</script> -->
+
+<!-- <script>
+  //92
+  function Car() {
+    this.make = "tata";
+    return { make: "BMW" };
+  }
+
+  const myCar = new Car();
+  console.log(myCar.make);
+</script> -->
+
+<!-- <script>
+  //93
+  (() => {
+    let x = (y = 10);
+  })();
+
+  console.log(typeof x);
+</script> -->
+
+<!-- <script>
+  //94
+  (() => {
+    let x = (y = 10);
+  })();
+
+  console.log(typeof y);
+</script> -->
+
+<!-- <script>
+  //95
+  (() => {
+    let x = 10;
+  })();
+
+  (() => {
+    let x = 10;
+  })();
+
+  console.log(typeof x);
+</script> -->
+
+<!-- <script>
+  //96
+  (() => {
+    let x = (y = 10);
+  })();
+
+  (() => {
+    let x = (y = 20);
+  })();
+
+  console.log(y);
+</script> -->
+
+<!-- <script>
+  //97
+  let x = 100;
+  (() => {
+    var x = 20;
+  })();
+
+  console.log(x);
+</script> -->
+
+<!-- <script>
+  //98
+
+  console.log(-true - true);
+</script> -->
+
+<!-- <script>
+  //99
+
+  console.log(true + +"10");
+</script> -->
