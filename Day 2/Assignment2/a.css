@@ -1,0 +1,16 @@
+/*Write external stylesheets  a.css and b.css
+	include them in hw.html
+		in a.css write class  .backgroundideas  that gives bgcolor and border settings
+		in b.css write class .foregroundidea that gives font color, font size and font style settings
+	apply the classes exquisitely to some p and span tags
+	apply the classes together to div tag */
+
+
+    .backgroundideas
+    {
+        background-color: rgb(254, 6, 6);
+
+        border-style: double;
+
+        border-color: rgb(0, 21, 253);
+    }

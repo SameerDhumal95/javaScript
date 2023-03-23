@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+</head>
+<body>
+    <p id="table"></p>
+
+    <script>
+        var column=[];
+        var str="";
+        for(i=1;i<=10000;i++){
+            str=str+"<tr><td>"+i+"</td><td>"+i*i+"</td></tr>";
+        }
+        var tbl=document.getElementById("table").innerHTML ="<table>"+
+           str
+        +"</table>";
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function validate() {
+        var user = document.getElementById("ip1").value;
+        if (user.length() > 8) {
+          return alert("response is recorded");
+        } else {
+          return alert("chr is not a valid");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="validate()">
+      Enter uname : <input type="text" id="ip1" name="uname" />
+      <input type="submit" value="OK" />
+    </form>
+  </body>
+</html>

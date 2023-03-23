@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TableHtml</title>
+</head>
+<body>
+    <label for="Enter Text">Enter Text</label>
+    <input type="text" id="text1" name="NewRow"><br>
+    <button onclick="f1()">OK</button>
+    <p id="display"></p>
+
+    <script>
+        function f1(){
+            var text=document.getElementById("text1").value;
+            //console.log(""+text);
+            var table="<table border=1>"+
+                "<tr><td>1</td><td>"+text+"</td></tr>"+
+            "</table>"
+
+            document.getElementById("display").innerHTML=table;
+            
+
+        }
+    </script>
+</body>
+</html>

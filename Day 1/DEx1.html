@@ -1,0 +1,20 @@
+<html>
+  <!--Dynamic html-->
+
+  <body>
+    <input type="text" id="ip1" />
+    <button onclick="f1()">OK</button>
+    <br />
+    <span id="sp1"></span>
+
+    <script>
+      function f1() {
+        var val = document.getElementById("ip1").value; //element getting
+        var element = document.getElementById("sp1");
+        // element.innerText = "<b>HELLO AND WELCOME TO DOM manipulation</b>"
+        element.innerHTML =
+          "<b>HELLO AND WELCOME " + val + " TO DOM manipulation</b>";
+      }
+    </script>
+  </body>
+</html>

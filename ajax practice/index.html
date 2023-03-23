@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script>
+      function loadabout() {
+        //call to ajax
+        var request = new XMLHttpRequest();
+        request.open("GET", "data.json");
+
+        //event listener
+        request.onreadystatechange = function () {
+          //call whenever state change
+
+          if (this.readyState == 4 && this.status == 200) {
+            //complete and successful
+            console.log(this.responseText);
+            let ob = JSON.parse(this.responseText);
+            // console.log(ob);
+            document.getElementById("container").innerHTML = this.responseText;
+          }
+        };
+        request.send();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to home page</h1>
+
+    <h2>Ajax learninng</h2>
+
+    <h1><a href="about.html">About Page</a></h1>
+    <button onclick="loadabout()">Load about</button>
+    <div id="container"></div>
+  </body>
+</html>

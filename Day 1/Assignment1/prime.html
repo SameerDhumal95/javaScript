@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prime</title>
+</head>
+<body>
+    <input type="number" id="num">
+    <button onclick="fun()">Check</button>
+
+
+    <script>
+        function fun(){
+            var number=document.getElementById("num").value;
+            var isPrime=true;
+            for(i=2;i<number/2;i++){
+                if(number%i==0)
+                isPrime=false;
+            }
+
+            if(isPrime){
+                alert(number+" is Prime number");
+            }
+            else{
+                alert(number+" is Composite Number");
+            }
+
+        }
+    </script>
+</body>
+</html>

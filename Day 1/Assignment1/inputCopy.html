@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InputCopy</title>
+  </head>
+  <body>
+    <label>Enter Name: </label>
+    <input type="text" id="name" placeholder="Enter Name:" /><br />
+    <button onclick="f1()">ok</button><br />
+    <label>Entered Name: </label>
+    <input type="text" id="copy" />
+
+    <script>
+      function f1() {
+        document.getElementById("copy").value =
+          document.getElementById("name").value;
+      }
+    </script>
+  </body>
+</html>

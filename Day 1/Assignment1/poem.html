@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Poem</title>
+  </head>
+  <body>
+    <div>
+      <h1>Poem</h1>
+    </div>
+    <div>
+      <input type="checkbox" id="poem" name="poem" value="Show Poem" />
+      <!-- <label for="poem"> Show Poem</label><br>-->Show Poem<br />
+      <button onclick="f1()">OK</button>
+      <label id="ip" value="Poem"></label>
+    </div>
+
+    <script>
+      function f1() {
+        const checkBox = document.getElementById("poem");
+        console.log(checkBox.checked);
+
+        if (checkBox.checked) {
+          document.getElementById("ip").innerHTML =
+            "<br>Twinkle, twinkle, little star,<br>" +
+            "How I wonder what you are!<br>" +
+            "Up above the world so high,<br>" +
+            "Like a diamond in the sky.";
+        } else {
+          document.getElementById("ip").innerHTML =
+            "click on checkbox to show poem";
+        }
+      }
+    </script>
+  </body>
+</html>

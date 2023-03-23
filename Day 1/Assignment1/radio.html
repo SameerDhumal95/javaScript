@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RadioButton</title>
+</head>
+<body>
+    <div>
+        <h1>States And Countries</h1>
+    </div>
+    <input type="radio" id="states" name="selection" value="states">
+    <label for="States">States</label><br>
+    <input type="radio" id="countries" name="selection" value="countries">
+    <label for="States">Countries</label><br>
+    <button onclick="f1()">Ok</button>
+    <select id="category" name="category" >
+    </select>
+
+
+    <script>
+        var state=document.getElementById("states");
+        var country=document.getElementById("countries");
+        var options="";
+        var st=["Maharashtra","Gujarat","Goa","Delhi"];
+        var ct=["India","France","US"];
+        function f1(){
+        if(state.checked){
+            options="";
+            for(i=0;i<st.length;i++)
+            options=options+"<option id='optionID' value="+st[i]+")'>"+st[i]+"</option>";
+        }
+        if(country.checked){
+            options="";
+            for(i=0;i<ct.length;i++)
+            options=options+"<option id='optionID' value="+ct[i]+">"+ct[i]+"</option>";
+        }
+        document.getElementById("category")
+        .innerHTML=options;
+
+      
+    }
+    // function f2(){
+    //     var msg=document.getElementById("optionID").value;
+    //     alert("Selected :"+ msg);
+    // }
+    </script>
+</body>
+</html>

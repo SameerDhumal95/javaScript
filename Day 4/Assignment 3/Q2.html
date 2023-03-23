@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <center><h1>Age validation</h1></center>
+  </head>
+  <script>
+    function checkAge() {
+      var a = document.getElementById("a1").value;
+      var valAge = document.getElementById("p2");
+      var range = document.getElementById("p1");
+
+      if (a > 18 && a < 110) {
+        range.innerHTML = "";
+        valAge.innerHTML = "You have Entered a valid Age";
+        return true;
+      } else {
+        valAge.innerHTML = "";
+        range.innerHTML = "Age should be in range 18 and 110";
+        return false;
+      }
+    }
+  </script>
+
+  <style>
+    #p1 {
+      color: red;
+    }
+    #p2 {
+      color: green;
+    }
+    body {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <form id="checkAge">
+      Enter age:
+      <input
+        type="number"
+        name="age"
+        id="a1"
+        placeholder="Enter AGE"
+        oninput="checkAge()"
+      />
+      <p id="p1"></p>
+      <p id="p2"></p>
+    </form>
+  </body>
+</html>
